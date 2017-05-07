@@ -1,7 +1,7 @@
 // note, io(<port>) will create a http server for you
 var moment = require('moment');
-var logger = require('./lib/logger.js');
-var config = require('./config/config.js');
+var logger = require('./lib/logger.js').logger;
+var config = require('./config/config.js').config;
 // var http = require('http');
 var port = config.port;
 var secret = config.secret;
@@ -13,7 +13,7 @@ var app = require('express')()
 var io = require('socket.io')(app);
 // var app = require('http').createServer();
 
-var pgOperation = require('./lib/pgOperation.js');
+var pgOperation = require('./lib/pgOperation.js').pgOperation;;
 
 var port = config.port;
 var connectedUser = {};
