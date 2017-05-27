@@ -1,2 +1,2 @@
 # ShareLocationBackend
-Share location node backend
+"HappyShare" Android app backend (Node).
